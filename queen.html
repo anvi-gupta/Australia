@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Queensland</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+body{
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+background-color: turquoise;
+}
+.container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: darkmagenta;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+}
+
+.container:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.text {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+a{
+    font-size: 30px;
+    margin-left: 480px;
+    text-decoration: none;
+    color: deeppink;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="https://easyscienceforkids.com/wp-content/uploads/2014/03/Fun-Science-for-Kids-All-about-Australia-National-Flag-of-Australia-image-e1394084809390.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Queensland, also called the sunshine state of Australia is a state situated in northeastern Australia, and is the second-largest and third-most populous state. It covers an area of 1,730,648 square kilometres and its capital is Brisbane.</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="./countries.html">🔼 Visit the other states </a>
+
+</body>
+</html>

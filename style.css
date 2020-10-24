@@ -1,0 +1,332 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+
+.hi{
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 50%;
+  }
+  #img{
+    margin-left: 350px;
+    display: none;
+  }
+  .image {
+    opacity: 1;
+    display: block;
+    width: 600px;
+    height: 500px;
+    margin-bottom: 30px;
+   
+    transition: .5s ease;
+    backface-visibility: hidden;
+    cursor: pointer;
+  }
+  
+  .middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    margin: auto;
+    margin-left: 340px;
+    cursor: pointer;
+    display: none;
+    
+  }
+  #onclick{
+    border-radius: 50%;
+  }
+  
+  .container:hover .image {
+    opacity: 0.6;
+  }
+  
+  .container:hover .middle {
+    opacity: 1;
+  }
+  
+  .text {
+    background-color: #f50a5f;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Neucha&display=swap');
+  
+  body {
+      margin: 10px;
+      /*font-family: 'Nanum Pen Script', cursive;*/
+      font-family: 'Neucha', cursive;
+      text-align: center;
+      font-size: x-large;
+      background-color: lightcyan;
+      border: 23px solid blue;
+      margin: 0;
+  }
+  
+  
+  h1 {
+      text-align: center;
+      /*background-image: url("https://cdn.pixabay.com/photo/2019/01/06/11/14/flower-3916823_1280.jpg");*/
+      /*background-image: url("https://image.freepik.com/free-vector/mint-green-floral-background-flower-border_1305-5500.jpg");*/
+      background-image: url("https://as2.ftcdn.net/jpg/02/07/73/97/500_F_207739731_eaj569lS8V2FOJAhdvgV2kXxTgyhqoKL.jpg");
+      padding: 25px;
+      margin: 30px;
+  }
+  
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+  .flip-card {
+      background-color: transparent;
+      width: 30px;
+      height: 350px;
+      border: 1px solid #f1f1f1;
+     
+      perspective: 1000px;
+      margin: 0 10px;
+      /* Remove this if you don't want the 3D effect */
+      margin-left: 500px;
+      margin-top: 230px;
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+      
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+      transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front,
+  .flip-card-back {
+      position: absolute;
+      width: 100%;
+      height: 180%;
+      -webkit-backface-visibility: hidden;
+      /* Safari */
+      backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+      background-color: #bbb;
+      color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+      background-color: darksalmon;
+      color: white;
+      transform: rotateY(180deg);
+      
+  }
+  
+  
+  h2 {
+      text-align: center;
+  }
+  
+  .question-container {
+      display: flex;
+      flex-direction: column;
+      display: none;
+      cursor: pointer;
+      margin-bottom: 240px;
+     margin-left: -80px;
+  }
+  
+  .blanks {
+      text-align: center;
+      position: relative;
+      margin-top: 250px;
+      font-size: xx-large;
+  }
+  
+  .english {
+      margin-top: 250px;
+  }
+  
+  .flip-card-1 {
+      background-color: transparent;
+      width: 500px;
+      height: 300px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px;
+     
+      /* Remove this if you don't want the 3D effect */
+      margin-left: 450px;
+      margin-top: 20px;
+  }
+  
+  .flip-card-inner-1 {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card-1:hover .flip-card-inner-1 {
+      transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front-1,
+  .flip-card-back-1 {
+      position: absolute;
+      width: 100%;
+      height: 180%;
+      -webkit-backface-visibility: hidden;
+      /* Safari */
+      backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front-1 {
+      background-color: #bbb;
+      color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back-1 {
+      background-color: black;
+      color: white;
+      transform: rotateY(180deg);
+  }
+  #g{
+    height: 500px;
+    width: 600px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  #g:hover{
+    box-shadow: 0px 0px 5px 5px crimson;
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+#f{
+    padding: 70px;
+    padding-left: 60px;
+    width: 300px;
+    height: 300px;
+}
+#p{
+  text-decoration: underline;
+  color: magenta;
+}
+.states{
+  width: 200px;
+  height: 200px;
+  display: none;
+
+}
+#mySidenav a {
+  position: absolute;
+  left: -80px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#about {
+  top: 140px;
+  background-color: #4CAF50;
+
+}
+
+#blog {
+  top: 200px;
+  background-color: #2196F3;
+}
+
+#projects {
+  top: 260px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 320px;
+  background-color: #555
+}
+.main {
+	margin-left: 40%;
+	margin-top: 15%;
+}
+.rating-star {
+    direction: rtl;
+    font-size: 40px;
+    unicode-bidi: bidi-override;
+    display: inline-block;
+}
+.rating-star input {
+    opacity: 0;
+    position: relative;
+    left: -30px;
+    z-index: 2;
+    cursor: pointer;
+}
+.rating-star span.star:before {
+    color: #777777;
+}
+.rating-star span.star {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    position: relative;
+    z-index: 1;
+}
+.rating-star span {
+    margin-left: -30px;
+}
+.rating-star span.star:before {
+    color: #777777;
+    content:"\f006";
+}
+.rating-star input:hover + span.star:before, .rating-star input:hover + span.star ~ span.star:before, .rating-star input:checked + span.star:before, .rating-star input:checked + span.star ~ span.star:before {
+    color: #ffd100;
+    content:"\f005";
+}
+ 
+.selected-rating{
+    color: #ffd100;
+    font-weight: bold;
+    font-size: 42px;
+}
+#states{
+  background-color: darkgrey;
+  border-radius: 50px;
+  
+}
+a{
+  color: darkcyan;
+}

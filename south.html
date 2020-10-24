@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <title>Southern Australia</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap');
+body{
+  font-family: 'Arvo', serif;
+background-color: palegreen;
+}
+* {box-sizing: border-box;}
+
+.container {
+  position: relative;
+  width: 150%;
+  max-width: 700px;
+  margin: auto;
+  margin-top: 60px;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+ width: 700px;
+ height: 350px;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+a{
+    font-size: 30px;
+    margin-left: 430px;
+    text-decoration: none;
+    color: deeppink;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="https://easyscienceforkids.com/wp-content/uploads/2014/03/Fun-Science-for-Kids-All-about-Australia-National-Flag-of-Australia-image-e1394084809390.png" alt="Avatar" class="image">
+  <div class="overlay">South Australia is a state in the southern central part of Australia with its capital as Adelaide. It is also nicknamed as the festival state. With a total land area of 983,482 square kilometres, it is the fourth-largest of Australia's states and territories by area, and fifth largest by population.
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<a href="./countries.html">🔼 Visit the other states </a>
+
+</body>
+</html>

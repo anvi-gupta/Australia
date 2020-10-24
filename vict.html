@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victoria</title>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Carter+One&display=swap');
+
+body{
+    margin-left: 290px;
+    margin-top: 60px;
+    font-family: 'Carter One', cursive;
+background-color: orange;
+}
+img{
+    width: 700px;
+    height: 350px;
+}
+div{
+    width: 700px;
+    height: 350px;
+    background-color: violet;
+    color: black;
+    font-size: 30px;
+    display: none;
+}
+a{
+    font-size: 30px;
+    margin-left: 140px;
+    text-decoration: none;
+    color: deeppink;
+}
+    </style>
+    <img src="https://easyscienceforkids.com/wp-content/uploads/2014/03/Fun-Science-for-Kids-All-about-Australia-National-Flag-of-Australia-image-e1394084809390.png" id="img" onclick="img()" alt="">
+    <div id="p">
+        <p>Victoria, state of southeastern Australia, occupies a mountainous coastal region of the continent. It is the second-smallest state with a land area of 237,659 km.  Melbourne city, capital of the state of Victoria, is located at the head of Port Phillip Bay, on the southeastern coast.
+        </p>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <a href="./countries.html">🔼 Visit the other states</a>
+
+    <script>
+        function img(){
+            document.getElementById("img").style.display="none";
+            document.getElementById("p").style.display="inherit";
+        }
+    </script>
+</body>
+</html>

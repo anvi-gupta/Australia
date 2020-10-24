@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Western Australia</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
+body{
+  font-family: 'Trispace', sans-serif;
+background-color: gray;
+}
+.container {
+  position: relative;
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  background-color: black;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 100%;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+a{
+    font-size: 30px;
+    margin-left: 380px;
+    text-decoration: none;
+    color: deeppink;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="container">
+  <img src="https://easyscienceforkids.com/wp-content/uploads/2014/03/Fun-Science-for-Kids-All-about-Australia-National-Flag-of-Australia-image-e1394084809390.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">Western Australia, the largest Australian State with an area of more than 2 500 000 sq km,  occupies a third of the continent. Its capital is Perth, and it is Australia’s face on the Indian Ocean. </div>
+  </div>
+</div><br><br><br><br><br>
+ <a href="./countries.html">🔼 Visit the other states </a>
+</body>
+</html>
